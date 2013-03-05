@@ -1,6 +1,13 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
+" for quickrun config like follows
+"   augroup NameIsUpToYou
+"   	autocmd BufWinEnter,BufNewFile *_spec.coffee set filetype=coffee.vows
+"   augroup END
+"   let g:quickrun_config['coffee.vows'] = {'command': 'vows', 'args': '--spec',
+"           \ 'hook/coffee_vows_filter/enable': 1,
+
 let s:hook = {
       \   'name': 'coffee_vows_filter',
       \   'kind': 'hook',
